@@ -5,6 +5,9 @@ interface PostShowProps {
 }
 
 export default async function PostShow({postId}: PostShowProps) {
+
+
+    
     const post = await db.post.findFirst({
         where: { id: postId },
     });
